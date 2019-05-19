@@ -377,7 +377,7 @@ class client:
             print(user.name, user.age, 'Distance in km: ', user.distance_km)
             print('Schools: ', user.schools)
             print('Job: ', user.jobs)
-            print(user.bio)
+            print((user.bio).encode(encoding='UTF-8',errors='replace'))
             print('--------------------------------------------------------')
             print('Do you like this user?')
             print('type l or s for like, or j or f for dislike   ')
